@@ -1,0 +1,6 @@
+{
+    "extends": "@rbac/tsconfig/node.json",
+    "include": [
+        "src/**/*",
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "name": "@rbac/api",
+    "version": "1.0.0",
+    "scripts": {
+        "dev": "tsx watch src/index.ts"
+    },
+    "dependencies": {
+        "@rbac/auth": "workspace:*"
+    },
+    "devDependencies": {
+        "@rbac/eslint-config": "workspace:*",
+        "@rbac/prettier": "workspace:*",
+        "@rbac/tsconfig": "workspace:*",
+        "@types/node": "^22.10.2"
+    },
+    "prettier": "@rbac/prettier",
+    "eslintConfig": {
+        "extends": [
+            "@rbac/eslint-config/node"
+        ]
+    }
+}
