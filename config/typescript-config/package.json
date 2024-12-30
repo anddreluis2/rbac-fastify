@@ -1,8 +1,11 @@
 {
-  "name": "@rbac/ts-config",
+  "name": "@rbac/tsconfig",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
+  "files": [
+    "library.json"
+  ],
   "publishConfig": {
     "access": "public"
   }
