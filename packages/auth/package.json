@@ -5,8 +5,8 @@
     "main": "src/index.ts",
     "types": "src/index.ts",
     "devDependencies": {
-        "@rbac/prettier": "workspace:*",
         "@rbac/eslint-config": "workspace:*",
+        "@rbac/prettier": "workspace:*",
         "@rbac/tsconfig": "workspace:*"
     },
     "eslintConfig": {
@@ -14,5 +14,8 @@
             "@rbac/eslint-config/base"
         ]
     },
-    "prettier": "@rbac/prettier"
+    "prettier": "@rbac/prettier",
+    "dependencies": {
+        "@casl/ability": "^6.7.2"
+    }
 }
