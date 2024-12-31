@@ -5,7 +5,8 @@
         "dev": "tsx watch src/index.ts"
     },
     "dependencies": {
-        "@rbac/auth": "workspace:*"
+        "@rbac/auth": "workspace:*",
+        "tsx": "^4.19.2"
     },
     "devDependencies": {
         "@rbac/eslint-config": "workspace:*",
