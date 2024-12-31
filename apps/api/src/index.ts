@@ -1,5 +1,11 @@
-import { ability } from '@rbac/auth'
+import { defineAbilityFor } from '@rbac/auth'
 
-const userCanInviteSomeone = ability.can('invite', 'User')
+const ability = defineAbilityFor({ role: 'MEMBER' })
 
-console.log('loool', userCanInviteSomeone)
+const userCanManageEverything = ability.can('manage', 'all')
+const userCanDeleteUsers = ability.can('delete', 'User')
+const userCannotDeleteUsers = ability.cannot('delete', 'User')
+
+console.log('loool', userCanManageEverything)
+console.log('loool', userCanDeleteUsers)
+console.log('loool', userCannotDeleteUsers)
