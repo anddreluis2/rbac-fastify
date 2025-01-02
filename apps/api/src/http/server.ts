@@ -1,4 +1,6 @@
 import { fastify } from 'fastify'
+import fastifySwagger from '@fastify/swagger'
+import fastifySwaggerUi from '@fastify/swagger-ui'
 import fastifyCors from '@fastify/cors'
 import {
   jsonSchemaTransform,
@@ -10,6 +12,22 @@ import {
 import { createAccount } from './routes/ auth/create-account'
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
+
+app.register(fastifySwagger, {
+  openapi: {
+    info: {
+      title: 'RBAC',
+      description: 'fullstack application with multi-tenancy and rbac',
+      version: '1.0.0',
+    },
+    servers: [],
+  },
+  transform: jsonSchemaTransform,
+})
+
+app.register(fastifySwaggerUi, {
+  routePrefix: '/docs',
+})
 
 app.setSerializerCompiler(serializerCompiler)
 app.setValidatorCompiler(validatorCompiler)
