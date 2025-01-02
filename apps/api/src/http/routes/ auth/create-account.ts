@@ -24,7 +24,7 @@ export async function createAccount(app: FastifyInstance) {
       })
 
       if (userWithSameEmail) {
-        reply
+        return reply
           .status(400)
           .send({ mesage: 'user with the same email already exists' })
       }
@@ -39,7 +39,7 @@ export async function createAccount(app: FastifyInstance) {
         },
       })
 
-      return reply.status(201).send()
+      return reply.status(201).send({ message: 'User created successfully' })
     }
   )
 }
