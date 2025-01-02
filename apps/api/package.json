@@ -6,6 +6,7 @@
     },
     "dependencies": {
         "@fastify/cors": "^10.0.1",
+        "@prisma/client": "6.1.0",
         "@rbac/auth": "workspace:*",
         "fastify": "^5.2.0",
         "fastify-type-provider-zod": "^4.0.2",
@@ -16,7 +17,8 @@
         "@rbac/eslint-config": "workspace:*",
         "@rbac/prettier": "workspace:*",
         "@rbac/tsconfig": "workspace:*",
-        "@types/node": "^22.10.2"
+        "@types/node": "^22.10.2",
+        "prisma": "^6.1.0"
     },
     "prettier": "@rbac/prettier",
     "eslintConfig": {
