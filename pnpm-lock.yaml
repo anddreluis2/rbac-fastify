@@ -39,6 +39,9 @@ importers:
         specifier: ^3.24.1
         version: 3.24.1
     devDependencies:
+      '@faker-js/faker':
+        specifier: ^9.3.0
+        version: 9.3.0
       '@rbac/eslint-config':
         specifier: workspace:*
         version: link:../../config/eslint-config
@@ -266,6 +269,10 @@ packages:
   '@eslint/js@8.57.1':
     resolution: {integrity: sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+
+  '@faker-js/faker@9.3.0':
+    resolution: {integrity: sha512-r0tJ3ZOkMd9xsu3VRfqlFR6cz0V/jFYRswAIpC+m/DIfAUXq7g8N7wTAlhSANySXYGKzGryfDXwtwsY8TxEIDw==}
+    engines: {node: '>=18.0.0', npm: '>=9.0.0'}
 
   '@fastify/ajv-compiler@4.0.1':
     resolution: {integrity: sha512-DxrBdgsjNLP0YM6W5Hd6/Fmj43S8zMKiFJYgi+Ri3htTGAowPVG/tG1wpnWLMjufEnehRivUCKZ1pLDIoZdTuw==}
@@ -1853,6 +1860,8 @@ snapshots:
       - supports-color
 
   '@eslint/js@8.57.1': {}
+
+  '@faker-js/faker@9.3.0': {}
 
   '@fastify/ajv-compiler@4.0.1':
     dependencies:
